@@ -7,15 +7,11 @@
         {
             "name": "Jacob Morris",
             "email": "jacob@mirk.co"
-        },
-        {
-            "name": "Mike McLin",
-            "email": "mclinmike@gmail.com"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Mirkco\\PassportFacebookLogin\\": "src"
+            "Mirk\\PassportFacebookLogin\\": "src"
         }
     },
     "require": {
