@@ -15,7 +15,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Mirkco\\Passport\\": "src"
+            "Mirkco\\PassportFacebookLogin\\": "src"
         }
     },
     "require": {
