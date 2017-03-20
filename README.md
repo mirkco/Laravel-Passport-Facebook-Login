@@ -13,8 +13,8 @@ Install with composer...  `composer require mirkco/laravel-passport-facebook-log
 
 ## Setup
 
-* Add `Mirkco\PassportFacebookLogin\RequestGrantProvider::class` to your list of providers **after** `Laravel\Passport\PassportServiceProvider`.
-* Add `Mirkco\PassportFacebookLogin\FacebookLoginTrait` Trait to your `User` model (or whatever model you have configured to work with Passport).
+* Add `Mirk\PassportFacebookLogin\FacebookLoginGrantProvider::class` to your list of providers **after** `Laravel\Passport\PassportServiceProvider`.
+* Add `Mirk\PassportFacebookLogin\FacebookLoginTrait` Trait to your `User` model (or whatever model you have configured to work with Passport).
 * Add your Facebook App details to your `.env` file
 ```bash
 # file .env

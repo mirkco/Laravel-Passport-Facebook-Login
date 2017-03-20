@@ -1,6 +1,9 @@
 <?php
 namespace Mirk\PassportFacebookLogin;
 
+use Illuminate\Http\Request;
+use Facebook\Facebook;
+
 trait FacebookLoginTrait {
     /**
      * Logs a App\User in using a Facebook token via Passport

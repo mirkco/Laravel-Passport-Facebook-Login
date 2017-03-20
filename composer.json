@@ -15,6 +15,7 @@
         }
     },
     "require": {
-        "laravel/passport": "^2.0"
+        "laravel/passport": "^2.0",
+        "facebook/graph-sdk": "^5.4"
     }
 }
