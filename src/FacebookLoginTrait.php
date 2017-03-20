@@ -30,12 +30,14 @@ trait FacebookLoginTrait {
                 // Attempt to get the user object from Facebook
                 $response = $fb->get('/me?locale=en_AU&fields=first_name,last_name,email');
                 $fbUser = $response->getDecodedBody();
-                // Check that we have an existing user matching the email address
 
-                $user = User::where('email', $fbUser['email'])->first();
+                // Check that we have an existing user matching the email address
+                $userModel = config('auth.providers.users.model');
+
+                $user = $userModel::where('email', $fbUser['email'])->first();
                 if (!$user) {
                     // User does not exist, create user automatically
-                    $user = new User();
+                    $user = new $userModel();
                     $user->first_name = $fbUser['first_name'];
                     $user->last_name = $fbUser['last_name'];
                     $user->email = $fbUser['email'];
