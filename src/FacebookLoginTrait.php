@@ -1,8 +1,9 @@
 <?php
 namespace Mirk\PassportFacebookLogin;
 
-use Illuminate\Http\Request;
 use Facebook\Facebook;
+use Illuminate\Http\Request;
+use League\OAuth2\Server\Exception\OAuthServerException;
 
 trait FacebookLoginTrait {
     /**
