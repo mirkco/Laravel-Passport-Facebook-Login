@@ -41,7 +41,7 @@ trait FacebookLoginTrait {
                     $user->first_name = $fbUser['first_name'];
                     $user->last_name = $fbUser['last_name'];
                     $user->email = $fbUser['email'];
-                    $user->password = $request->get('fb_token'); // We need to give them a password, use the token
+                    $user->password = uniqid('fb_', true); // We need to give them a password, generate a random one
                     $user->save();
                 }
                 return $user;
