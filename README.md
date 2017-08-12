@@ -1,3 +1,8 @@
+# NO LONGER UNDER MAINTAINED
+Please see @danjdewhurst's repo https://github.com/danjdewhurst/Laravel-Passport-Facebook-Login for a more up-to-date version.
+
+---
+
 # Laravel Passport Facebook Login
 Provides a new Laravel Passport Grant Client named `facebook_login`, allowing you to log a user in with just their Facebook Login token
 
