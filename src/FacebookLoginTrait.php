@@ -38,8 +38,7 @@ trait FacebookLoginTrait {
                 if (!$user) {
                     // User does not exist, create user automatically
                     $user = new $userModel();
-                    $user->first_name = $fbUser['first_name'];
-                    $user->last_name = $fbUser['last_name'];
+                    $user->name = $fbUser['first_name'].' '.$fbUser['last_name'];
                     $user->email = $fbUser['email'];
                     $user->password = uniqid('fb_', true); // We need to give them a password, generate a random one
                     $user->save();
